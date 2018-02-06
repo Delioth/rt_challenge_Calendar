@@ -23,7 +23,6 @@ class CalendarApp extends Component {
     // Start at 1+7 to start with the first cell and avoid negative firstDay.
     let firstDay = 8 + this.props.date.getDay() - (this.props.date.getDate()%7);
     firstDay = firstDay % 7;
-    console.log(firstDay);
     let today = this.props.date.getDate();
     let dateCells = [];
     let days = monthDays[this.props.date.getMonth()];
